@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block contenido %} 
+
+<div class="p-5 mb-4 bg-light rounded-3">
+   <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Bienvenidos a la Libreria</h1>
+      <p class="col-md-8 fs-4">
+         "Entra en un rincón acogedor donde las historias cobran vida. Bienvenido a nuestro refugio literario, donde cada libro es una puerta a nuevas aventuras, emociones y conocimientos. Descubre un universo de posibilidades entre las páginas, donde la magia de la lectura te invita a explorar, aprender y soñar. Sumérgete en la maravilla de los libros y deja que cada palabra te lleve a lugares inimaginables. ¡Bienvenido a nuestro mundo, donde la pasión por la lectura se encuentra con la puerta de tu imaginación!"
+      </p>
+      <a class="btn btn-primary btn-lg" href="{% url 'libros' %}" role="button">Iniciar</a>
+   </div>
+</div>
+
+
+{% endblock %}
