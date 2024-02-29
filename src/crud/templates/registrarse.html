@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block titulo %} Registrarse {% endblock %}
+
+{% block contenido %}
+
+
+<main class="form-signin">
+   <form>
+      {{ csrf_token }}
+      {{ form.as_table }}
+   </form>
+</main>
+
+
+{% endblock %}

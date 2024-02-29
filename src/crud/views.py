@@ -1,16 +1,18 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm 
+
 from django.http import HttpResponse
 from .models import Libros
 from .forms import LibroForm
 
 # Create your views here.
 
-def inicio_x(request):
-   return HttpResponse("<h1>Hola mundo desde Django.</h1>")
+def index(request):
+   form = UserCreationForm()
+   return render(request,'registrarse.html',{'form': form})
 
 def inicio(request):
    return render(request,'paginas/inicio.html')
-
 
 def nosotros(request):
    return render(request,'paginas/nosotros.html')
